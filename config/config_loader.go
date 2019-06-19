@@ -22,7 +22,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"path"
 	"strings"
 	"time"
 )
@@ -67,10 +66,6 @@ func consumerInit(confConFile string) error {
 		return perrors.Errorf("application configure(consumer) file name is nil")
 	}
 
-	if path.Ext(confConFile) != ".yml" {
-		return perrors.Errorf("application configure file name{%v} suffix must be .yml", confConFile)
-	}
-
 	confFileStream, err := ioutil.ReadFile(confConFile)
 	if err != nil {
 		return perrors.Errorf("ioutil.ReadFile(file:%s) = error:%v", confConFile, perrors.WithStack(err))
@@ -95,10 +90,6 @@ func consumerInit(confConFile string) error {
 func providerInit(confProFile string) error {
 	if confProFile == "" {
 		return perrors.Errorf("application configure(provider) file name is nil")
-	}
-
-	if path.Ext(confProFile) != ".yml" {
-		return perrors.Errorf("application configure file name{%v} suffix must be .yml", confProFile)
 	}
 
 	confFileStream, err := ioutil.ReadFile(confProFile)
