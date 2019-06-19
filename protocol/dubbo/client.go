@@ -49,10 +49,8 @@ var (
 )
 
 func init() {
-
 	conf := &ClientConfig{}
-	err = yaml.Unmarshal(dubboConfByte, conf)
-	if err != nil {
+	if err := yaml.Unmarshal(dubboConfByte, conf); err != nil {
 		panic(err)
 	}
 
