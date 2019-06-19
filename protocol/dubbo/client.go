@@ -50,22 +50,6 @@ var (
 
 func init() {
 
-	// load clientconfig from consumer_config
-	protocolConf := config.GetConsumerConfig().ProtocolConf
-	if protocolConf == nil {
-		logger.Warnf("protocol_conf is nil")
-		return
-	}
-	dubboConf := protocolConf.(map[interface{}]interface{})[DUBBO]
-	if protocolConf == nil {
-		logger.Warnf("dubboConf is nil")
-		return
-	}
-
-	dubboConfByte, err := yaml.Marshal(dubboConf)
-	if err != nil {
-		panic(err)
-	}
 	conf := &ClientConfig{}
 	err = yaml.Unmarshal(dubboConfByte, conf)
 	if err != nil {

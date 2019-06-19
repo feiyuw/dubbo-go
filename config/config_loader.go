@@ -44,21 +44,18 @@ var (
 	maxWait        = 3
 )
 
-// loaded comsumer & provider config from xxx.yml, and log config from xxx.xml
-// Namely: dubbo.comsumer.xml & dubbo.provider.xml in java dubbo
-func init() {
+func InitConsumer() {
+	confConFile := os.Getenv(constant.CONF_CONSUMER_FILE_PATH)
 
-	var (
-		confConFile, confProFile string
-	)
-
-	confConFile = os.Getenv(constant.CONF_CONSUMER_FILE_PATH)
-	confProFile = os.Getenv(constant.CONF_PROVIDER_FILE_PATH)
-
-	if errCon := consumerInit(confConFile); errCon != nil {
-		log.Printf("[consumerInit] %#v", errCon)
+	if err := consumerInit(confConFile); err != nil {
+		log.Printf("[consumerInit] %#v", err)
 		consumerConfig = nil
 	}
+}
+
+func InitProvider() {
+	confProFile := os.Getenv(constant.CONF_PROVIDER_FILE_PATH)
+
 	if errPro := providerInit(confProFile); errPro != nil {
 		log.Printf("[providerInit] %#v", errPro)
 		providerConfig = nil
