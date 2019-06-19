@@ -19,7 +19,7 @@ package directory
 
 import (
 	"context"
-	"github.com/apache/dubbo-go/remoting"
+	"github.com/feiyuw/dubbo-go/remoting"
 	"net/url"
 	"strconv"
 	"testing"
@@ -31,13 +31,13 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/cluster/cluster_impl"
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/protocol/invocation"
-	"github.com/apache/dubbo-go/protocol/protocolwrapper"
-	"github.com/apache/dubbo-go/registry"
+	"github.com/feiyuw/dubbo-go/cluster/cluster_impl"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/protocol/invocation"
+	"github.com/feiyuw/dubbo-go/protocol/protocolwrapper"
+	"github.com/feiyuw/dubbo-go/registry"
 )
 
 func TestSubscribe(t *testing.T) {

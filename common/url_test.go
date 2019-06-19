@@ -24,7 +24,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/constant"
 	"github.com/stretchr/testify/assert"
 )
 

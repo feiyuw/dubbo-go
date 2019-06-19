@@ -18,11 +18,11 @@
 package proxy_factory
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/common/proxy"
-	"github.com/apache/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/common/proxy"
+	"github.com/feiyuw/dubbo-go/protocol"
 )
 
 func init() {

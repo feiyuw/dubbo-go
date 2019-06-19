@@ -18,7 +18,7 @@
 package filter
 
 import (
-	"github.com/apache/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/protocol"
 )
 
 // Extension - Filter

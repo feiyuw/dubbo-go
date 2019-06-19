@@ -12,9 +12,9 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/protocol"
-	"github.com/apache/dubbo-go/protocol/invocation"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/protocol/invocation"
 )
 
 func TestRoundRobinSelect(t *testing.T) {
@@ -22,13 +22,13 @@ func TestRoundRobinSelect(t *testing.T) {
 
 	var invokers []protocol.Invoker
 
-	url, _ := common.NewURL(context.TODO(), "dubbo://192.168.1.0:20000/org.apache.demo.HelloService")
+	url, _ := common.NewURL(context.TODO(), "dubbo://192.168.1.0:20000/org.feiyuw.demo.HelloService")
 	invokers = append(invokers, protocol.NewBaseInvoker(url))
 	i := loadBalance.Select(invokers, &invocation.RPCInvocation{})
 	assert.True(t, i.GetUrl().URLEqual(url))
 
 	for i := 1; i < 10; i++ {
-		url, _ := common.NewURL(context.TODO(), fmt.Sprintf("dubbo://192.168.1.%v:20000/org.apache.demo.HelloService", i))
+		url, _ := common.NewURL(context.TODO(), fmt.Sprintf("dubbo://192.168.1.%v:20000/org.feiyuw.demo.HelloService", i))
 		invokers = append(invokers, protocol.NewBaseInvoker(url))
 	}
 	loadBalance.Select(invokers, &invocation.RPCInvocation{})
@@ -40,7 +40,7 @@ func TestRoundRobinByWeight(t *testing.T) {
 	var invokers []protocol.Invoker
 	loop := 10
 	for i := 1; i <= loop; i++ {
-		url, _ := common.NewURL(context.TODO(), fmt.Sprintf("dubbo://192.168.1.%v:20000/org.apache.demo.HelloService?weight=%v", i, i))
+		url, _ := common.NewURL(context.TODO(), fmt.Sprintf("dubbo://192.168.1.%v:20000/org.feiyuw.demo.HelloService?weight=%v", i, i))
 		invokers = append(invokers, protocol.NewBaseInvoker(url))
 	}
 

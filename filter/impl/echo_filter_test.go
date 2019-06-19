@@ -26,9 +26,9 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/protocol"
-	"github.com/apache/dubbo-go/protocol/invocation"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/protocol/invocation"
 )
 
 func TestEchoFilter_Invoke(t *testing.T) {

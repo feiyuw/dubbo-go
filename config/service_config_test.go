@@ -26,7 +26,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/common/extension"
 )
 
 func doinit() {

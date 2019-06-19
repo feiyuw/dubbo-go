@@ -21,12 +21,12 @@ import (
 	"sync"
 )
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/common/logger"
-	"github.com/apache/dubbo-go/config_center"
-	"github.com/apache/dubbo-go/remoting"
-	"github.com/apache/dubbo-go/remoting/zookeeper"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/logger"
+	"github.com/feiyuw/dubbo-go/config_center"
+	"github.com/feiyuw/dubbo-go/remoting"
+	"github.com/feiyuw/dubbo-go/remoting/zookeeper"
 )
 
 const ZK_CLIENT = "zk config_center"

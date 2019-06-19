@@ -24,11 +24,11 @@ import (
 	perrors "github.com/pkg/errors"
 )
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/logger"
-	"github.com/apache/dubbo-go/registry"
-	"github.com/apache/dubbo-go/remoting"
-	zk "github.com/apache/dubbo-go/remoting/zookeeper"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/logger"
+	"github.com/feiyuw/dubbo-go/registry"
+	"github.com/feiyuw/dubbo-go/remoting"
+	zk "github.com/feiyuw/dubbo-go/remoting/zookeeper"
 )
 
 type RegistryDataListener struct {

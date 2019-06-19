@@ -33,12 +33,12 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/common/logger"
-	"github.com/apache/dubbo-go/protocol"
-	"github.com/apache/dubbo-go/protocol/protocolwrapper"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/common/logger"
+	"github.com/feiyuw/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/protocol/protocolwrapper"
 )
 
 type ServiceConfig struct {

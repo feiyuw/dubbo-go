@@ -22,7 +22,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common"
 )
 
 type MockRegistry struct {

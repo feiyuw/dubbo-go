@@ -18,8 +18,8 @@
 package extension
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/registry"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/registry"
 )
 
 var (

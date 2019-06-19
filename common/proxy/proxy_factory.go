@@ -18,8 +18,8 @@
 package proxy
 
 import (
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/protocol"
 )
 
 type ProxyFactory interface {

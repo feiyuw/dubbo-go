@@ -1,12 +1,12 @@
 /*
- * Licensed to the Apache Software Foundation (ASF) under one or more
+ * Licensed to the feiyuw Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
  * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
+ * The ASF licenses this file to You under the feiyuw License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
  * the License.  You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.feiyuw.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -22,9 +22,9 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/cluster"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/cluster"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/protocol"
 )
 
 const (

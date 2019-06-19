@@ -32,7 +32,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common/logger"
+	"github.com/feiyuw/dubbo-go/common/logger"
 )
 
 type gettyRPCClient struct {

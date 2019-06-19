@@ -27,10 +27,10 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/cluster/cluster_impl"
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/common/proxy/proxy_factory"
+	"github.com/feiyuw/dubbo-go/cluster/cluster_impl"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/common/proxy/proxy_factory"
 )
 
 func TestConfigLoader(t *testing.T) {

@@ -27,13 +27,13 @@ import (
 )
 
 import (
-	cluster "github.com/apache/dubbo-go/cluster/cluster_impl"
-	"github.com/apache/dubbo-go/common"
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/common/extension"
-	"github.com/apache/dubbo-go/protocol"
-	"github.com/apache/dubbo-go/protocol/protocolwrapper"
-	"github.com/apache/dubbo-go/registry"
+	cluster "github.com/feiyuw/dubbo-go/cluster/cluster_impl"
+	"github.com/feiyuw/dubbo-go/common"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/extension"
+	"github.com/feiyuw/dubbo-go/protocol"
+	"github.com/feiyuw/dubbo-go/protocol/protocolwrapper"
+	"github.com/feiyuw/dubbo-go/registry"
 )
 
 func referNormal(t *testing.T, regProtocol *registryProtocol) {

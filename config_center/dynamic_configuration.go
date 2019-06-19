@@ -21,7 +21,7 @@ import (
 	"time"
 )
 import (
-	"github.com/apache/dubbo-go/remoting"
+	"github.com/feiyuw/dubbo-go/remoting"
 )
 
 //////////////////////////////////////////

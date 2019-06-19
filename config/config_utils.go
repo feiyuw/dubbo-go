@@ -22,7 +22,7 @@ import (
 	"strings"
 )
 import (
-	"github.com/apache/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/common/constant"
 )
 
 func mergeValue(str1, str2, def string) string {

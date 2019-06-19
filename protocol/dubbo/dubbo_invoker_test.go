@@ -28,8 +28,8 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go/common/constant"
-	"github.com/apache/dubbo-go/protocol/invocation"
+	"github.com/feiyuw/dubbo-go/common/constant"
+	"github.com/feiyuw/dubbo-go/protocol/invocation"
 )
 
 func TestDubboInvoker_Invoke(t *testing.T) {
