@@ -35,6 +35,7 @@ import (
 	"github.com/feiyuw/dubbo-go/common"
 	"github.com/feiyuw/dubbo-go/common/constant"
 	"github.com/feiyuw/dubbo-go/common/logger"
+	"github.com/feiyuw/dubbo-go/config"
 )
 
 var (
@@ -47,7 +48,23 @@ var (
 	clientConf *ClientConfig
 )
 
-func init() {
+func InitClient() {
+	// load clientconfig from consumer_config
+	protocolConf := config.GetConsumerConfig().ProtocolConf
+	if protocolConf == nil {
+		logger.Warnf("protocol_conf is nil")
+		return
+	}
+	dubboConf := protocolConf.(map[interface{}]interface{})[DUBBO]
+	if protocolConf == nil {
+		logger.Warnf("dubboConf is nil")
+		return
+	}
+
+	dubboConfByte, err := yaml.Marshal(dubboConf)
+	if err != nil {
+		panic(err)
+	}
 	conf := &ClientConfig{}
 	if err := yaml.Unmarshal(dubboConfByte, conf); err != nil {
 		panic(err)
