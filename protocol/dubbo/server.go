@@ -36,7 +36,7 @@ import (
 
 var srvConf *ServerConfig
 
-func init() {
+func InitServer() {
 
 	// load clientconfig from provider_config
 	protocolConf := config.GetProviderConfig().ProtocolConf
