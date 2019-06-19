@@ -19,7 +19,6 @@ package logger
 
 import (
 	"io/ioutil"
-	"log"
 	"os"
 	"path"
 )
