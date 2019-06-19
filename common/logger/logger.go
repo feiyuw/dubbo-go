@@ -52,15 +52,8 @@ type Logger interface {
 	Debugf(fmt string, args ...interface{})
 }
 
-func init() {
+func InitLog() error {
 	logConfFile := os.Getenv(constant.APP_LOG_CONF_FILE)
-	err := InitLog(logConfFile)
-	if err != nil {
-		log.Printf("[InitLog] error: %v", err)
-	}
-}
-
-func InitLog(logConfFile string) error {
 	if logConfFile == "" {
 		InitLogger(nil)
 		return perrors.New("log configure file name is nil")
