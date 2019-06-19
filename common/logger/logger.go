@@ -20,7 +20,6 @@ package logger
 import (
 	"io/ioutil"
 	"os"
-	"path"
 )
 
 import (
@@ -56,10 +55,6 @@ func InitLog() error {
 	if logConfFile == "" {
 		InitLogger(nil)
 		return perrors.New("log configure file name is nil")
-	}
-	if path.Ext(logConfFile) != ".yml" {
-		InitLogger(nil)
-		return perrors.Errorf("log configure file name{%s} suffix must be .yml", logConfFile)
 	}
 
 	confFileStream, err := ioutil.ReadFile(logConfFile)
